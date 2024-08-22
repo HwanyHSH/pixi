@@ -5,6 +5,8 @@
 <configuration>
     <typeAliases>
         <typeAlias type="com.psproject.model.MemberDTO" alias="mDTO" />
+        <typeAlias type="com.psproject.model.FitnessDTO" alias="fDTO" />
+        <typeAlias type="com.psproject.model.FitRecordDTO" alias="frDTO" />
     </typeAliases>
 
 </configuration>
