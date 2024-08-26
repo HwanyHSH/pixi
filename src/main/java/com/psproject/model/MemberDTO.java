@@ -15,6 +15,6 @@ public class MemberDTO {
     private String nickname;
     private String type;
     private String role;
-    private String create;
-    private String update;
+    private String create_date;
+    private String update_date;
 }

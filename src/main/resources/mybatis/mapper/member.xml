@@ -4,4 +4,13 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.psproject.model.MemberMapper">
+
+    <insert id="insertMember" parameterType="mDTO">
+        insert into member (email, name, password, birth, phone, gender, nickname, type, role, create_date)
+        values (#{email}, #{name}, #{password}, #{birth}, #{phone}, #{gender}, #{nickname}, #{type}, #{role}, NOW())
+    </insert>
+
+    <select id="findMemberName" parameterType="String" resultType="mDTO">
+        select * from member where email = #{email}
+    </select>
 </mapper>
