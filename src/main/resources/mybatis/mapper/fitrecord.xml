@@ -5,4 +5,8 @@
 
 <mapper namespace="com.psproject.model.FitRecordMapper">
 
+    <select id="fitrecord" resultType="frDTO">
+        select * from fitness_record order by record_key
+    </select>
+
 </mapper>
